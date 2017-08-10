@@ -162,9 +162,6 @@ describe "PlotCanvas constraints", ->
     @plot_canvas = new PlotCanvas({ 'plot': plot })
     @plot_canvas.attach_document(doc)
 
-  it "should return 20 constraints from _get_constant_constraints", sinon.test () ->
-    expect(@plot_canvas._get_constant_constraints().length).to.be.equal 20
-
   it "should return 0 constraints from _get_side_constraints if there are no side renderers", sinon.test () ->
     expect(@plot_canvas._get_side_constraints().length).to.be.equal 0
 
