@@ -791,23 +791,23 @@ export class PlotCanvas extends LayoutDOM
       # Relate panel boundaries to canvas and frame
       EQ(@above_panel._top,    [-1, @canvas._top]   ),
       EQ(@above_panel._bottom, [-1, @frame._top]    ),
-      EQ(@above_panel._left,   [-1, @canvas._left]  ),
-      EQ(@above_panel._right,  [-1, @canvas._right] ),
+      EQ(@above_panel._left,   [-1, @frame._left]  ),
+      EQ(@above_panel._right,  [-1, @frame._right] ),
 
       EQ(@below_panel._top,    [-1, @frame._bottom] ),
       EQ(@below_panel._bottom, [-1, @canvas._bottom]),
-      EQ(@below_panel._left,   [-1, @canvas._left]  ),
-      EQ(@below_panel._right,  [-1, @canvas._right] ),
+      EQ(@below_panel._left,   [-1, @frame._left]  ),
+      EQ(@below_panel._right,  [-1, @frame._right] ),
 
       EQ(@left_panel._left,    [-1, @canvas._left]  ),
       EQ(@left_panel._right,   [-1, @frame._left]   ),
-      EQ(@left_panel._top,     [-1, @canvas._top]   ),
-      EQ(@left_panel._bottom,  [-1, @canvas._bottom]),
+      EQ(@left_panel._top,     [-1, @frame._top]   ),
+      EQ(@left_panel._bottom,  [-1, @frame._bottom]),
 
       EQ(@right_panel._left,   [-1, @frame._right]  ),
       EQ(@right_panel._right,  [-1, @canvas._right] ),
-      EQ(@right_panel._top,    [-1, @canvas._top]   ),
-      EQ(@right_panel._bottom, [-1, @canvas._bottom]),
+      EQ(@right_panel._top,    [-1, @frame._top]   ),
+      EQ(@right_panel._bottom, [-1, @frame._bottom]),
 
       # Plot sides align
       EQ(@_top,                    [-1, @above_panel._height])
